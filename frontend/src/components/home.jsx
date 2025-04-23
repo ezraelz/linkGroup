@@ -12,13 +12,16 @@ const Home = () => {
         {link: 'https://www.linkedin.com/in/esrael-zerihun/', name: 'LinkedIn', icon: <FontAwesomeIcon icon={faLinkedin} />},
         {link: 'http://www.youtube.com/@esraelzerihun3671', name: 'Youtube', icon: <FontAwesomeIcon icon={faYoutube} />},
         {link: 'https://www.tiktok.com/@esraelzerihun', name: 'TikTok', icon: <FontAwesomeIcon icon={faTiktok} />},
-        {link: 'https://x.com/Esra82237692', name: 'twitter', icon: <FontAwesomeIcon icon={faXTwitter} />},
         {link: 'https://www.instagram.com/esrael_zerihun/', name: 'Instagram', icon: <FontAwesomeIcon icon={faInstagram} />},
+        {link: 'https://x.com/Esra82237692', name: 'twitter', icon: <FontAwesomeIcon icon={faXTwitter} />},
+
     ]
     return (
         <div className='home'>
             <div className="header">
-                <img src={bg1} alt="" />
+                <div className="img">
+                    <img src={bg1} alt="" />
+                </div>
                 <h1>Link Group</h1>
             </div>
             <div className="link-group">
