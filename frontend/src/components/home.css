@@ -1,0 +1,219 @@
+.home{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background: rgb(27, 69, 117);
+    color: white;
+    font-family: 'Courier New', Courier, monospace;
+    font-size: 2vh;
+    font-weight: 600;
+    text-shadow: 0 0 5px rgba(0, 0, 0, 0.5);
+    text-transform: uppercase;
+    letter-spacing: 0.1em;
+    padding: 2vh;
+    margin: 0;
+    box-sizing: border-box;
+    overflow: hidden;
+}
+.header{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: row;
+    width: 80%;
+    height: 14vh;
+    background: rgb(8, 61, 104);
+    padding: 2vh;
+    border-radius: 2vh;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+    margin-bottom: 2vh;
+    font-family: 'Courier New', Courier, monospace;
+    font-weight: 600;
+    text-shadow: 0 0 5px rgba(0, 0, 0, 0.5);
+    text-transform: uppercase;
+    letter-spacing: 0.1em;
+
+}
+.header img{
+    width: 15vh;
+    height: 15vh;
+    margin-right: 2vh;
+    border-radius: 50%;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+    transition: all 0.3s ease-in-out;
+    &:hover{
+        transform: scale(1.1);
+        box-shadow: 0 0 20px rgba(0, 0, 0, 0.5);
+    }
+    &:active{
+        transform: scale(0.9);
+    }
+    &:focus{
+        outline: none;
+    }
+    &:focus-visible{
+        outline: 2px solid rgb(249, 249, 249);
+        outline-offset: 2px;
+    }
+    &:focus-within{
+        outline: 2px solid rgb(249, 249, 249);
+        outline-offset: 2px;
+    }
+    &:focus-within:hover{
+        transform: scale(1.1);
+        box-shadow: 0 0 20px rgba(0, 0, 0, 0.5);
+    }
+}
+.header h1{
+    font-size: 5vh;
+    margin-left: 2vh;
+    color: rgb(249, 249, 249);
+    text-align: center;
+    width: 100%;
+    line-height: 3.5vh;
+    background: rgb(8, 61, 104);
+    padding: 2vh;
+    border-radius: 2vh;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+    font-family: 'Courier New', Courier, monospace;
+    font-weight: 600;
+    text-shadow: 0 0 5px rgba(0, 0, 0, 0.5);
+    text-transform: uppercase;
+    letter-spacing: 0.1em;
+}
+p{
+    font-size: 2.5vh;
+    margin-top: 1vh;
+    text-align: center;
+    width: 100%;
+    line-height: 3vh;
+    padding: 2vh;
+    border-radius: 1vh;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+    margin-bottom: 2vh;
+    font-family: 'Courier New', Courier, monospace;
+    font-weight: 600;
+    text-shadow: 0 0 5px rgba(0, 0, 0, 0.5);
+    text-transform: uppercase;
+    letter-spacing: 0.1em;
+    transition: all 0.3s ease-in-out;
+    cursor: pointer;
+    &:hover{
+        background: rgb(104, 53, 8);
+        box-shadow: 0 0 20px rgba(0, 0, 0, 0.5);
+        transform: scale(1.05);
+    }
+    &:active{
+        transform: scale(0.95);
+    }
+    &:focus{
+        outline: none;
+    }
+    &:focus-visible{
+        outline: 2px solid rgb(249, 249, 249);
+        outline-offset: 2px;
+    }
+    &:focus-within{
+        outline: 2px solid rgb(249, 249, 249);
+        outline-offset: 2px;
+    }
+    &:focus-within:hover{
+        background: rgb(8, 61, 104);
+        box-shadow: 0 0 20px rgba(0, 0, 0, 0.5);
+        transform: scale(1.05);
+    }
+    &:focus-within:active{
+        transform: scale(0.95);
+    }
+    &:focus-within:focus{
+        outline: 2px solid rgb(249, 249, 249);
+        outline-offset: 2px;
+    }
+    &:focus-within:focus-visible{
+        outline: 2px solid rgb(249, 249, 249);
+        outline-offset: 2px;
+    }
+    &:focus-within:focus-within{
+        outline: 2px solid rgb(249, 249, 249);
+        outline-offset: 2px;
+    }
+    &:focus-within:focus-within:hover{
+        background: rgb(8, 61, 104);
+        box-shadow: 0 0 20px rgba(0, 0, 0, 0.5);
+        transform: scale(1.05);
+    }
+}
+.link-group p:nth-child(1) {
+    font-size: 2vh;
+    font-weight: 600;
+    text-shadow: 0 0 5px rgba(0, 0, 0, 0.5);
+    text-transform: uppercase;
+    letter-spacing: 0.1em;
+    color: rgb(255, 255, 255);
+    text-align: center;
+    width: 100%;
+    line-height: 3vh;
+    background: rgb(8, 61, 104);
+    padding: 2vh;
+    margin-bottom: 2vh;
+    font-family: 'Courier New', Courier, monospace;
+    font-weight: 600;
+    text-shadow: 0 0 5px rgba(0, 0, 0, 0.5);
+    text-transform: uppercase;
+    letter-spacing: 0.1em;
+    transition: all 0.3s ease-in-out;
+    cursor: pointer;
+    &:hover{
+        background: rgb(255, 255, 255);
+        color: rgb(20, 90, 166);
+        box-shadow: 0 0 20px rgba(0, 0, 0, 0.5);
+        transform: scale(1.05);
+    }
+    &:active{
+        transform: scale(0.95);
+    }
+    &:focus{
+        outline: none;
+    }
+}
+.link-group p:nth-child(1) a{
+    text-decoration: none;
+    color: rgb(255, 255, 255);
+    font-size: 2.5vh;
+    margin-top: 1vh;
+    text-align: center;
+    width: 100%;
+    line-height: 3vh;
+    padding: 2vh;
+    border-radius: 1vh;
+    margin-bottom: 2vh;
+    font-family: 'Courier New', Courier, monospace;
+    font-weight: 600;
+    text-transform: uppercase;
+    letter-spacing: 0.1em;
+    &:hover{
+        color: rgb(20, 90, 166);
+        transform: scale(1.05);
+    }
+}
+.link-group p:nth-child(2){
+    font-size: 2vh;
+    font-weight: 600;
+    text-shadow: 0 0 5px rgba(0, 0, 0, 0.5);
+    text-transform: uppercase;
+    letter-spacing: 0.1em;
+    color: rgb(249, 249, 249);
+    text-align: center;
+    width: 100%;
+    line-height: 3vh;
+    background: rgb(8, 61, 104);
+    padding: 2vh;
+}
+a{
+    text-decoration: none;
+    color: rgb(249, 249, 249);
+    font-size: 2.5vh;
+    margin-top: 1vh;
+}
