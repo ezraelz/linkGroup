@@ -14,7 +14,6 @@ const Home = () => {
         {link: 'https://www.tiktok.com/@esraelzerihun', name: 'TikTok', icon: <FontAwesomeIcon icon={faTiktok} />},
         {link: 'https://www.instagram.com/esrael_zerihun/', name: 'Instagram', icon: <FontAwesomeIcon icon={faInstagram} />},
         {link: 'https://x.com/Esra82237692', name: 'twitter', icon: <FontAwesomeIcon icon={faXTwitter} />},
-
     ]
     return (
         <div className='home'>
@@ -22,11 +21,18 @@ const Home = () => {
                 <div className="img">
                     <img src={bg1} alt="" />
                 </div>
-                <h1>Link Group</h1>
+                <div className="overlay">
+                    <h1>Esrael Zerihun</h1>
+                    <span>Website developter</span>
+                </div>
             </div>
             <div className="link-group">
                 {links.map((link)=>(
-                    <p><a href={link.link}>{link.icon} {link.name}</a></p>
+                    <p>
+                        <a href={link.link}>
+                            {link.icon} {link.name}
+                        </a>
+                    </p>
                 ))}
             </div>
 
